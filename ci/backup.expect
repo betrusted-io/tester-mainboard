@@ -82,7 +82,7 @@ expect {
     -re {\_\|TT\|\_ROOTKEY.UPDPW,.*\_\|TE\|\_} {
 		exec echo -n -e "4 <ng>r_P@sw0rd\r" > /dev/ttyS0
 		# ample time for the backup to prep
-		after 9000
+		after 20000
 		# space bar to dismiss the bip-39 display
 		exec echo -n -e " " > /dev/ttyS0
         exp_continue -continue_timer
